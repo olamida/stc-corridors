@@ -1,0 +1,17 @@
+[project]
+name = "stc-corridors"
+version = "0.1.0"
+description = "Decentralized Spatio-Temporal Corridor negotiation for mixed ground/air agents (simulation)"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+viz = ["matplotlib", "pillow", "numpy", "pandas"]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
